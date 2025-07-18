@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    padding: 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .nav{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    height: 100%;
+}
+#header .nav{
+    display: flex;
+    align-items: start;
+}
+#header .nav li a{
+    display: block;
+    height: 100%;
+    padding: 0 8px;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+#header .nav #subnav{
+    display: none;
+    font-size: 14px;
+    color: black;
+    position: absolute;
+}
+#header .nav #subnav li{
+    display: block;
+    height: 46px;
+}
+#header .nav li:hover{
+    background-color: rgb(255, 255, 255, 0.9);
+    color: black;
+}
+
+#header .nav li:hover #subnav{
+    width: auto;
+    display: block;
+    background-color: rgb(255, 255, 255, 0.9);
+    top: 46px;
+}
+
+#search-btn{
+    position: fixed;
+    top: 0;
+    right: 16px;
+    height: 46px;
+    width: 46px;
+    line-height: 46px;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+}
+
+#search-btn:hover{
+    background-color: rgba(255, 0, 0, 0.8);
+    color: black;
+}
+#menu-btn{
+    position: fixed;
+    top: 0;
+    right: 16px;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+}
+#menu-btn:active{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+#slider{
+    position: relative;
+}
+#slider .text-content{
+    width: 100%;
+    position: absolute;
+    bottom: 4%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+#slider .text-content .text-heading{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#slider .text-content .text-description{
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 8px;
+}
+#content {
+    color: white;
+}
+.content-section {
+    margin-top: 20px auto 0;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding-bottom: 56px;
+
+}
+.content-section .section-heading {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.content-section .section-sub-heading {
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+.content-section .about-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 auto 0;
+    text-align: justify;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.members-list{
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.members-list .member-item img{
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    border-radius: 4px;
+}
+.members-list .member-item .member-name{
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+#tour-dates {
+    margin: 20px auto 0;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    max-width: 768px;
+}
+.tickets-list {
+    background-color: white;
+    color: black;
+    margin-top: 40px;
+}
+
+.tickets-list li{
+    font-size: 15px;
+    border-bottom: #ddd 1px solid;
+    padding: 8px 12px;
+    display: flex;
+}
+.tickets-list .sold{
+    background-color: rgba(229, 16, 16, 0.8);
+    color: white;
+    margin-left: 12px;
+    border-radius: 2px;
+    padding: 1px 2px;
+}
+.tickets-list .ava {
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    color: white;
+    margin-left: auto;
+}
+
+.ticket-venues{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    color: black;
+    margin: 16px 0;
+    padding: 16px 0;
+    
+
+}
+.ticket-venues .venue-item{
+    background-color: white;
+}
+.ticket-venues .venue-item img:hover{
+    filter: brightness(0.5);
+
+}
+.ticket-venues .venue-item .venue-information{
+    padding: 0 12px;
+}
+
+.ticket-venues .venue-item .venue-information .venue-name{
+    font-weight: bold;
+    font-size: 15px;
+    margin: 15px 0;
+}
+.ticket-venues .venue-item .venue-information .venue-date{
+    font-size: 14px;
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+.ticket-venues .venue-item .venue-information .venue-description{
+    font-size: 14px;
+    margin: 15px 0;
+}
+.buy-tickets{
+    font-size: 15px;
+    margin: 0 0 15px;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+}
+
+.buy-tickets:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.content-section .contact-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 11%;
+    padding: 32px 16px;
+    
+}
+.content-section .contact-body .contact-form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-section .contact-body .contact-form input{
+    border: rgba(0, 0, 0, 0.5) 0.8px solid;
+    padding: 8px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.content-section .contact-body .contact-form .input-row{
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+#send-button{
+    width: 20%;
+    margin-left: auto;
+}
+
+#footer{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 64px 16px;
+}
+#footer p{
+    opacity: 0.6;
+}
+#footer p a{
+    text-decoration: underline;
+}
+#fillter{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+.buy-form{
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 15vw;
+    z-index: 10000;
+    width: 70vw;
+    background-color: white;
+    animation: slideIn 0.5s ease-in-out;
+}
+.buy-form .form-heading{
+    font-size: 28px;
+    letter-spacing: 4px;
+    text-align: center;
+    background-color: #009688;
+    padding: 32px 16px;
+    color: white;
+}
+.form-body{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 15px;
+}
+
+.form-body input{
+    border: rgba(0, 0, 0, 0.2) 0.8px solid;
+    padding: 8px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.form-body #pay-button{
+    background-color: #009688;
+    padding: 16px;
+}
+
+.form-body #pay-button:hover{
+    background-color: #ccc;
+    color: black;
+}
+.form-body p{
+    margin-left: auto;
+}
+
+.form-body p a{
+    text-decoration: underline;
+    color: #2196f3;
+}
+
+.form-body #cancel-button{
+    background-color: #f44336;
+    padding: 8px 12px;
+    color: white;
+    width: 8%;
+}
+.form-body #cancel-button:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+

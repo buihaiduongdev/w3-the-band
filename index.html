@@ -1,0 +1,167 @@
+<!DOCTYPE html class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul class="nav js-nav">
+                <li><a href="#">Home</a></li>
+                <li class="js-nav-item"><a href="#band">Band</a></li>
+                <li class="js-nav-item"><a href="#tour-dates">Tour</a></li>
+                <li class="js-nav-item"><a href="#Contact">Contact</a></li>
+                <li class="js-nav-item nav-mobile"><a href="#">Merch</a></li>
+                <li class="js-nav-item nav-pc">
+                    <a href="#">More
+                        <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                    <ul id="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                </li>
+            
+            </ul>
+        </div>
+            <i id="search-btn" class="fa-solid fa-magnifying-glass"></i>
+            <a id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <div id="slider">
+            <img class="mySlides" src="https://www.w3schools.com/w3images/la.jpg" style="width:100%">
+            <img class="mySlides" src="https://www.w3schools.com/w3images/ny.jpg" style="width:100%">
+            <img class="mySlides" src="https://www.w3schools.com/w3images/chicago.jpg" style="width:100%">
+            <div class="text-content">
+                <h1 class="text-heading">The Band</h1>
+                <p class="text-description">Lorem ipsum dolor sit amet</p>
+            </div>
+        
+        </div>
+        <div id="content">
+            <div class="content-section" id="band">
+                <h2 class="section-heading">The Band</h2>
+                <p class="section-sub-heading">We love music</p>
+                <p class="about-text">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="members-list">
+                    <div class="member-item">
+                        <p class="member-name">The band</p>
+                        <img src="assets/img/bandmember.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">The band</p>
+                        <img src="assets/img/bandmember.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="member-item">
+                        <p class="member-name">The band</p>
+                        <img src="assets/img/bandmember.jpg" alt="Name" class="member-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="tour-dates">
+                <h2 class="section-heading">Tour dates</h2>
+                <p class="section-sub-heading">Remember to book your tickets!</p>
+                <ul class="tickets-list">
+                    <li class="date">September <span class="sold">Sold out</span></li>
+                    <li class="date">October <span class="sold">Sold out</span></li>
+                    <li class="date">November <span class="ava">3</span></li>
+                </ul>
+                <div class="ticket-venues">
+                    <div class="venue-item">
+                        <img src="assets/img/newyork.jpg" alt="venueName" class="venue-img" width="100%">
+                        <div class="venue-information">
+                            <p class="venue-name">New York</p>
+                            <p class="venue-date">Fri 27 Nov 2016</p>
+                            <p class="venue-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-tickets" onclick="onBuy()">Buy tickets</button>
+                        </div>
+                    </div>
+                    <div class="venue-item">
+                        <img src="assets/img/paris.jpg" alt="venueName" class="venue-img" width="100%">
+                        <div class="venue-information">
+                            <p class="venue-name">Paris</p>
+                            <p class="venue-date">Sat 28 Nov 2016</p>
+                            <p class="venue-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-tickets" onclick="onBuy()">Buy tickets</button>
+                        </div>
+                    </div>
+                    <div class="venue-item">
+                        <img src="assets/img/sanfran.jpg" alt="venueName" class="venue-img" width="100%">
+                        <div class="venue-information">
+                            <p class="venue-name">San Francisco</p>
+                            <p class="venue-date">Sun 29 Nov 2016</p>
+                            <p class="venue-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-tickets" onclick="onBuy()">Buy tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="Contact">
+                <h2 class="section-heading">Contact</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="contact-body">
+                    <div class="contact-infor">
+                        <i class="fa-solid fa-location-dot" style="width:30px"></i>Chicago, US
+                        <br>
+                        <i class="fa-solid fa-phone" style="width:30px"></i>Phone: +00 151515
+                        <br>
+                        <i class="fa-solid fa-envelope" style="width:30px"></i>Email: mail@mail.com
+                    </div>
+                    <form class="contact-form">
+                        <div class="input-row">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                        </div>
+                        <input type="text" name="message" id="message" placeholder="Message">
+                        <button class="buy-tickets" id="send-button" >Send</button>
+
+                    </form>
+                </div>
+            </div>
+        <div class="map">
+            <img src="assets/img/map.jpg" alt="map" width="100%">
+        </div>
+        <!-- Footer -->
+        </div>
+        <div id="footer">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+    </div>
+    <div id="fillter" class="js-fillter"></div>
+    <div class="buy-form" id="buy-form">
+        <div class="form-heading" >
+            <i class="fa-solid fa-briefcase"></i> Tickets
+        </div>
+        <div class="form-body">
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i> Tickets, $15 per person
+            </div>
+            <input type="text" name="person-quantity" id="person-quantity" placeholder="Number of persons">
+            <div>
+                <i class="fa-solid fa-user"></i> Send To
+            </div>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <button id="pay-button">Pay
+                <i class="fa-solid fa-credit-card"></i>
+            </button>
+            <p>Need <a href="">help?</a></p>
+            <button id="cancel-button" onclick="onCancel()">Cancel</button>
+        </div>
+    </div>
+</body>
+<script src="assets/js/scripts.js"></script>
+</html>
